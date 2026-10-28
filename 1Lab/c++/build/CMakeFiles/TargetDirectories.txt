@@ -1,0 +1,3 @@
+/home/simon/informatika/2kurs/lab/L1/build/CMakeFiles/DataStructures.dir
+/home/simon/informatika/2kurs/lab/L1/build/CMakeFiles/edit_cache.dir
+/home/simon/informatika/2kurs/lab/L1/build/CMakeFiles/rebuild_cache.dir
