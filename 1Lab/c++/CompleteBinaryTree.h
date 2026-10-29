@@ -21,16 +21,16 @@ public:
     CompleteBinaryTree();
     ~CompleteBinaryTree();
 
-    // Добавление элемента с сохранением структуры полного двоичного дерева
+    // 
     void insert(const std::string& val);
 
-    // Поиск элемента
+    // 
     bool search(const std::string& val) const;
 
-    // Вместо удаления: операция проверки на Complete Binary Tree
+    //вместо проверка на Complete Binary Tree
     bool isComplete() const;
 
-    // Чтение структуры
+    //чтение
     void printLevelOrder() const;
     void printTraversals() const;
     void clear();

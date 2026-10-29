@@ -20,7 +20,7 @@ void CompleteBinaryTree::clear() {
     root = nullptr;
 }
 
-// Вставка на первый свободный уровень слева направо (сохраняя CBT)
+//вставка на первый свободный уровень слева направо
 void CompleteBinaryTree::insert(const std::string& val) {
     TNode* node = new TNode(val);
     if (!root) {
@@ -65,7 +65,7 @@ bool CompleteBinaryTree::search(const std::string& val) const {
     return false;
 }
 
-// Проверка свойства Complete Binary Tree (BFS с флагом неполного узла)
+//проверка Complete Binary Tree соблюд ли обход BFS (с флагом неполного узла)
 bool CompleteBinaryTree::isComplete() const {
     if (!root) return true;
     std::queue<TNode*> q;
@@ -137,7 +137,7 @@ void CompleteBinaryTree::printTraversals() const {
 void CompleteBinaryTree::saveToFile(const std::string& filename) const {
     std::ofstream out(filename);
     if (!out.is_open() || !root) return;
-    // Сохраняем в Level-order
+    //cохранение в Level-order
     std::queue<TNode*> q;
     q.push(root);
     while (!q.empty()) {

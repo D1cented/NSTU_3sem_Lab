@@ -50,7 +50,7 @@ void MyStack::print() const {
 void MyStack::saveToFile(const std::string& filename) const {
     std::ofstream out(filename);
     if (!out.is_open()) return;
-    // Сохраняем снизу вверх, чтобы при последовательном чтении стек восстановился в том же порядке
+    //сохранение снизу вверх
     std::vector<std::string> elems;
     Node* cur = topNode;
     while (cur) {

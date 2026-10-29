@@ -18,13 +18,13 @@ public:
     DoublyList();
     ~DoublyList();
 
-    // 4 способа добавления:
+    //добавление:
     void push_head(const std::string& val);
     void push_tail(const std::string& val);
     bool insert_after(const std::string& target, const std::string& val);
     bool insert_before(const std::string& target, const std::string& val);
 
-    // 4 способа удаления + по значению:
+    //удаление + по значению:
     bool pop_head();
     bool pop_tail();
     bool delete_after(const std::string& target);

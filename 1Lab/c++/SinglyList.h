@@ -17,20 +17,20 @@ public:
     SinglyList();
     ~SinglyList();
 
-    // 4 способа добавления:
+    //добавление:
     void push_head(const std::string& val);
     void push_tail(const std::string& val);
     bool insert_after(const std::string& target, const std::string& val);
     bool insert_before(const std::string& target, const std::string& val);
 
-    // 4 способа удаления + по значению:
+    //удаления + по значению:
     bool pop_head();
     bool pop_tail();
     bool delete_after(const std::string& target);
     bool delete_before(const std::string& target);
     bool delete_value(const std::string& val);
 
-    // Чтение и поиск
+    //чтение и поиск
     std::string get(size_t index) const;
     int search(const std::string& val) const;
     void print() const;
